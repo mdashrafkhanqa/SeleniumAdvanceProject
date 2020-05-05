@@ -8,7 +8,6 @@ public class ScriptBase {
 
     public WebDriver driver;
 
-    @Test
     public void beforeTest(){
         System.setProperty("webdriver.chrome.driver","./drivers/chromedriver");
         driver = new ChromeDriver();
