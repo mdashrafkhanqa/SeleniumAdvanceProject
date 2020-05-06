@@ -6,16 +6,22 @@ import org.testng.annotations.Test;
 import pageController.LoginController;
 
 public class LoginTest extends ScriptBase {
-    LoginController loginController;
+    LoginController loginController; //initialize LoginController class object
 
-    @BeforeTest
+    @BeforeTest            //before run the test
     public void init(){
         beforeTest();
     }
 
-    @Test
+    @Test (priority = 1)
     public void verifySignInButton(){
         loginController = new LoginController(driver);  //class level variable
         loginController.signInTab();
+    }
+
+    @Test (priority = 2)
+    public void verifyInvalidLogIn() throws InterruptedException {
+        loginController = new LoginController(driver);  //class level variable
+        loginController.invalidLogIn();
     }
 }
