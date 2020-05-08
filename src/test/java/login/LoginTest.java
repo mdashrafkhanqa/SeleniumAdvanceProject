@@ -22,6 +22,7 @@ public class LoginTest extends ScriptBase {
     @Test (priority = 2)
     public void verifyInvalidLogIn() throws InterruptedException {
         loginController = new LoginController(driver);  //class level variable
-        loginController.invalidLogIn();
+        loginController.invalidLogIn(driver,"There is 1 error");
     }
+
 }
