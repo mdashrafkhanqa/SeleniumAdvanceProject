@@ -3,6 +3,7 @@
 <suite name="All Test Suite" parallel="tests" >
     <test name="firefoxTest">
         <parameter name="browser" value="firefox"></parameter>
+        <parameter name="environment" value="qa"></parameter>
         <classes>
             <class name="login.LoginTest">
                <methods>
@@ -14,6 +15,7 @@
     </test>
     <test name="chromeTest">
         <parameter name="browser" value="chrome"></parameter>
+        <parameter name="environment" value="qa"></parameter>
         <classes>
             <class name="login.LoginTest">
                 <methods>
