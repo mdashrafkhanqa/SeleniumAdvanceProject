@@ -12,7 +12,7 @@ public class LoginTest extends ScriptBase {
     @Test (priority = 1)
     public void verifySignInButton(){
         loginController = new LoginController(driver);  //class level variable
-        loginController.signInTab();
+        loginController.signInTab(driver);
     }
 
     @Test (priority = 2)
