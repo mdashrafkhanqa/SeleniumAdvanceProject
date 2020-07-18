@@ -38,7 +38,7 @@ public class LoginController {
         userName.sendKeys("abcde@gmail.com");
         userPassword.sendKeys("abcd1234");
         submitLogIn.click();
-        //Assert.assertEquals(invalidLoginError,invalidLoginError);
+        Assert.assertEquals(invalidLoginError,invalidLoginError);
         errorMessage(driver,message);
     }
 

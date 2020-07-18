@@ -10,7 +10,10 @@ import org.testng.annotations.Test;
 
 public class ScriptBase {
 
-    public WebDriver driver;
+    public static WebDriver getDriver(){
+        return driver;
+    }
+    public static WebDriver driver;
     @Parameters({"browser", "environment"})
     @BeforeClass
     public void beforeTest(String browser, String environment){
